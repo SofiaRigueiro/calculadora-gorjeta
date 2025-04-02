@@ -8,7 +8,6 @@
  }
  
  :root {
- 
      font-size: 62.5%;
      --jagged-ice: #C5E4E7;
      --white: #FFF;
@@ -42,11 +41,10 @@
  
  .info {
      padding-inline: 0.8rem;
-
+ 
      div {
-        margin-bottom: 3.2rem;
-    }
-
+         margin-bottom: 3.2rem;
+     }
  
      strong {
          color: var(--greyish-turquoise);
@@ -55,8 +53,7 @@
      .input-box {
          margin-top: .6rem;
          background-color: var(--squeeze);
-     }
-     display: flex;
+         display: flex;
          align-items: center;
          padding: .6rem 1.8rem;
          border-radius: .5rem;
@@ -98,7 +95,7 @@
                  padding-block: .6rem;
                  border-radius: .5rem;
              }
-             
+ 
              input {
                  width: 100%;
                  font-size: 2.4rem;
@@ -109,7 +106,7 @@
                  padding-block: .6rem;
                  font-weight: 700;
                  color: var(--sherpa-blue);
-                 
+ 
                  &::placeholder {
                      color: var(--beetle-green);
                  }
@@ -121,4 +118,46 @@
          }
  
      }
+ }
  
+ .results {
+     background: var(--sherpa-blue);
+     border-radius: 1.5rem;
+     padding: 2.4rem;
+ 
+     .amount,
+     .total {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 2rem;
+ 
+         p{
+             color: var(--white);
+             font-weight: 700;
+ 
+             span{
+                 color: var(--regent-grey);
+                 font-size: 1.3rem;
+             }
+         }
+ 
+         strong {
+             color: var(--topaz);
+             font-size: 3.2rem;
+         }
+     }
+ 
+     button {
+             margin-top: 1.6rem;
+             width: 100%;
+             background: var(--topaz);
+             border: none;
+             border-radius: .5rem;
+             padding-block: .9rem;
+             font-size: 2rem;
+             color: var(--sherpa-blue);
+             font-weight: 700;
+             text-transform: uppercase;
+     }
+ }
